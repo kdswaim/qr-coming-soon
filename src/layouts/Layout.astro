@@ -9,42 +9,52 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+		<!--Secondary Font: IBM Plex Sans -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta name="description" content="Quality Roofing of Indiana, LLC is a local family-owned and operated roofing company ready to help with your next roof repair, roof inspection, roof maintenance, or roof replacement. Siding and gutter work included in estimate. Free quote & industry-best warranty. Ready to work with us? Give us a call.">
+	<meta name="keywords" content="roofing, roofing companies, roofing business in terre haute, roof repair near me">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="cache-control" content="no-store,max-age=0" />
+	<link rel="icon" type="image/svg+xml" href="/qr-favicon.png" />
+	<title>Coming Soon | Quality Roofing of Indiana, LLC</title>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+
+* { 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-image: url("src/images/quality_ext1.JPG");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+	width: 100%;
+}
 </style>
