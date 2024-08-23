@@ -6,7 +6,7 @@ import Layout from "../layouts/Layout.astro"
 		<section class="header-subheader">
 			<div class="logo">
 				<img style="height: auto;width: 9rem;padding:0;margin:0;-webkit-filter: drop-shadow(5px 5px 5px #141414); 
-    filter: drop-shadow(5px 5px 5px #141414);" src="public/QualityRoofingTransparent - 1.png" alt="Quality Roofing of Indiana, LLC">
+    filter: drop-shadow(5px 5px 5px #141414);" src="/QualityRoofingTransparent - 1.png" alt="Quality Roofing of Indiana, LLC">
 			</div>
 		<h1 class="subhead-text">Our website may be under construction, but a quality roof is still a click away.</h1>
 	</section>
@@ -80,11 +80,37 @@ import Layout from "../layouts/Layout.astro"
 		Copyright 2024 © Quality Roofing of Indiana, LLC, all Rights Reserved.
 		</small>
 	</section>
-
-
 </Layout>
 
 <style>
+
+* { 
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-image: url("src/images/quality_ext1.JPG");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+	width: 100%;
+}
 
 #container {
         display: flex;
